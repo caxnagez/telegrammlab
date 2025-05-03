@@ -2,6 +2,7 @@ import telebot
 import json
 import random
 from telebot import types
+from telebot import apihelper
 
 TOKEN = '7904803262:AAEHryGLGAJxBVukauXf3kPfsgLX_Q6pzoU'
 bot = telebot.TeleBot(TOKEN)
@@ -40,7 +41,7 @@ user_data = {}
 @bot.message_handler(commands=['start'])
 def start_quiz(message):
     try:
-        with open('history_quiz.json', 'r', encoding='utf-8') as file:
+        with open('hist.json', 'r', encoding='utf-8') as file:
             quiz_data = json.load(file)
         
         questions = quiz_data['test']
@@ -112,6 +113,8 @@ def finish_quiz(chat_id):
     )
     
     del user_data[chat_id]
+
+apihelper.delete_webhook(TOKEN)
 
 if __name__ == '__main__':
     print("Бот запущен...")

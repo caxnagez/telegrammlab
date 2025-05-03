@@ -1,5 +1,6 @@
 import telebot
 from telebot import types
+from telebot import apihelper
 
 TOKEN = "7904803262:AAEHryGLGAJxBVukauXf3kPfsgLX_Q6pzoU"
 bot = telebot.TeleBot(TOKEN)
@@ -71,7 +72,8 @@ def handle_navigation(message):
     else:
         bot.send_message(chat_id, "Пожалуйста, используйте кнопки для навигации.")
 
+apihelper.delete_webhook(TOKEN)
 
 if __name__ == '__main__':
-    print("started")
+    print("Бот запущен...")
     bot.polling()

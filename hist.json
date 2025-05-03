@@ -1,0 +1,24 @@
+{
+    "test": [
+        {
+            "question": "В каком году была война 1812 года?",
+            "answer": "1812"
+        },
+        {
+            "question": "Где стоит статуя бляхамухи? В городе....",
+            "answer": "Краснодар"
+        },
+        {
+            "question": "Кто написал мангу Berserk?",
+            "answer": "Кэнтаро Миура"
+        },
+        {
+            "question": "Say my name ... you goddam right",
+            "answer": "Haisenberg"
+        },
+        {
+            "question": "Вопрос от Жака Фреско. Шёл ёж?",
+            "answer": "Что?"
+        }
+    ]
+}
