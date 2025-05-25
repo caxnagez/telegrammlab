@@ -3,7 +3,7 @@ import requests
 from io import BytesIO
 from urllib.parse import quote
 
-TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+TOKEN = '7904803262:AAEHryGLGAJxBVukauXf3kPfsgLX_Q6pzoU'
 KEY = 'd053f8e4-fb49-498a-8dbe-0ba34403c7c4'
 
 bot = telebot.TeleBot(TOKEN)
